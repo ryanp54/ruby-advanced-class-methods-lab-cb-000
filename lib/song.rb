@@ -43,7 +43,7 @@ class Song
     song.artist_name = artist
     song
   end
-  
+
   def self.create_from_filename(filename)
     song = self.new_from_filename(filename)
     song.save
@@ -51,9 +51,9 @@ class Song
   end
 
   def self.destroy_all
-    self.all = []    
+    self.all = []
   end
-  
+
   def save
     self.class.all << self
   end
